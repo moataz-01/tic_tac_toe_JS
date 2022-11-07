@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3401/3401165.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TIC TAC TOE game</title>
+</head>
+<body>
+    <div class="game">
+        <div class="title"><span>Tic Tac Toe</span></div>
+        <div id="player">Player 1</div>
+        <div class="container">
+            <div class="square" id="item1" onclick="game(this.id)"></div>
+            <div class="square" id="item2" onclick="game(this.id)"></div>
+            <div class="square" id="item3" onclick="game(this.id)"></div>
+    
+            <div class="square" id="item4" onclick="game(this.id)"></div>
+            <div class="square" id="item5" onclick="game(this.id)"></div>
+            <div class="square" id="item6" onclick="game(this.id)"></div>
+    
+            <div class="square" id="item7" onclick="game(this.id)"></div>
+            <div class="square" id="item8" onclick="game(this.id)"></div>
+            <div class="square" id="item9" onclick="game(this.id)"></div>
+        </div>
+    </div>
+
+    <div id="over" class="overlay">
+        <div id="playAgain" class="winner">
+            <!-- <h3>PLAY AGAIN?</h3> -->
+            <button><a href="index.html">Home</a></button>
+            <button onclick="again()">Play Again</button>
+        </div>
+    </div>
+    <audio id="winTone" autoplay></audio>
+    <script src="script/main.js"></script>
+</body>
+</html>
